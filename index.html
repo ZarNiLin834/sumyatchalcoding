@@ -1,0 +1,1362 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            width: max-1200px;
+            margin: auto;
+        }
+
+        #hero-section {
+            background-image: url("https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/banner/banner.jpg");
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 15px;
+
+        }
+
+        .card::before {
+            content: "";
+            background-color: red;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            left: -30px;
+            top: -80px;
+            width: 50%;
+            height: 50%;
+            /* clip-path: circle(10% at 50px 50px ); */
+            border-radius: 50%;
+            transition: all 800ms;
+            position: absolute;
+
+        }
+
+        .card:hover::before {
+            width: 130%;
+            height: 130%;
+            border-radius: 0;
+        }
+
+        .home a::before{
+            content: ;
+            width: 100%;
+            height: 1.2px;
+
+            position: absolute;
+            background-color: aqua;
+
+            bottom: 0px;
+            left: -100px;
+        }
+
+        .home a:hover::before{
+            left: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="mt-5 flex justify-between items-center border-b-2 py-7">
+            <div>
+                <img src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/logo/logo.png"
+                    alt="">
+            </div>
+            <div class="flex">
+                <div class="border border-[#64b496] rounded-l-lg py-2 ">
+                    <input class="ml-2 outline-none" type="text" placeholder="Search for items....">
+                </div>
+
+                <div class="border border-[#64b496] px-2  py-2 ">
+                    <select class="outline-none" name="text" id="">
+                        <option value="">All Categories</option>
+                        <option value="">Mens</option>
+                        <option value="">Womens</option>
+                        <option value="">Electronic</option>
+                    </select>
+                </div>
+
+                <div class="border border-[#64b496]  py-2 px-3 rounded-r-lg bg-[#64b496] text-white">
+                    <button class="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="group">
+                <div class="gap-6 flex">
+                    <div class=" text-xl">
+                        <span class="hover:text-green-500 group-hover:cursor-pointer ">
+                            <i class="fa-regular fa-user"></i>
+                            Account
+                        </span>
+
+                        <div
+                            class="bg-white flex flex-col shadow-md p-4 absolute gap-3 opacity-0 group-hover:opacity-100 text-sm transition-all duration-500 invisible text-gray-500 group-hover:visible">
+                            <div>Register</div>
+                            <div>Checkout</div>
+                            <div>Login</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="hover:text-green-500 group-hover:cursor-pointer text-xl">
+                            <i class="fa-regular fa-heart"></i>
+                            Wishlist
+                        </span>
+                    </div>
+
+                    <span class="hover:text-green-500 group-hover:cursor-pointer text-xl">
+                        <i class="fas fa-cart-shopping"></i>
+                        Cart
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="flex justify-between items-center mt-5 ">
+            <div class="text-xl border px-2 py-1 hover:cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="flex gap-5 relative">
+              
+                <span class="home">
+                    <a href="#">Home</a>
+                </span>
+                <span>
+                    <a href="#">Category</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                
+                </span>
+                <span>
+                    <a href="#">Products</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                
+                </span>
+                <span>
+                    <a href="#">Pages</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                
+                </span>
+                <span>
+                    <a href="#">Blogs</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                
+                </span>
+                <span>
+                    <a href="#">Elements</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                
+                </span>
+               
+            </div>
+            <div class="font-bold">
+                <i class="fas fa-phone"></i>
+                + 123 (456) (789)
+            </div>
+        </div>
+    </section>
+
+    <section id="hero-section">
+
+        <div class="container relative ">
+
+            <div
+                class="absolute bg-[url(https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/shape/4.png)] top-[-140px] left-[600px] bg-contain bg-center opacity-20	 bg-no-repeat w-[130px] h-[80px] ">
+            </div>
+            <div class="space-y-5">
+
+                <span class="underline text-[#64b496] font-bold text-xl">100%</span>
+                <span class="font-bold text-xl">Organic Vegetables</span>
+
+                <h1 class="text-5xl font-bold">The best way to <br> stuff your wallet.</h1>
+
+                <p class="text-gray-500 text-lg">Lorem ipsum dolor, sit amet connecter adipisicing elit.<br> Iste
+                    dignissimos
+                    assumenda natus desert.</p>
+
+                <button class="bg-green-400 hover:bg-black  px-6 py-2 text-white transition-all duration-500">Shop
+                    Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- % card -->
+    <section class="container">
+        <div class="mt-20 grid grid-rows-1 grid-cols-3 space-x-7 ">
+            <div>
+                <ul class="flex flex-col space-y-2 ">
+                    <li class="grid text-center font-bold place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class="text-lg text-[#64b4ae] duration-200">Cake & Milk</h1>
+                        <span class="text-xs text-gray-400">(65 items)</span>
+                    </li>
+                    <li class="grid text-center font-bold place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class="text-lg hover:text-[#64b4ae] duration-200">Cake & Milk</h1>
+                        <span class="text-xs text-gray-400">(65 items)</span>
+                    </li>
+                    <li class="grid text-center font-bold  place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class="text-lg hover:text-[#64b4ae] duration-200">Cake & Milk</h1>
+                        <span class="text-xs text-gray-400">(65 items)</span>
+                    </li>
+                    <li class="grid text-center font-bold place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class="text-lg hover:text-[#64b4ae] duration-200">Cake & Milk</h1>
+                        <span class="text-xs text-gray-400">(65 items)</span>
+                    </li>
+                    <li class="grid text-center font-bold place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class=" text-lg hover:text-[#64b4ae] duration-200">Cake & Milk</h1>
+                        <span class=" text-xs text-gray-400 ">(65 items)</span>
+                    </li>
+                    <li class="grid place-content-center bg-[#f7f7f8] py-3">
+                        <h1 class="text-lg hover:text-[#64b4ae] duration-200	">View More</h1>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="card  bg-[url(https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/categories/3.jpg)] overflow-hidden	relative bg-cover bg-no-repeat">
+
+                <div class="flex items-center text-white absolute top-[10px] left-[30px]">
+                    <h1 class="font-bold text-5xl">50</h1>
+                    <div class="mt-1">
+                        <div>%</div>
+                        <div class="text-lg">OFF</div>
+                    </div>
+                </div>
+                <div
+                    class="text-white text-center absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[-30px]	">
+                    <div class="font-bold text-2xl mb-3">Cake</div>
+                    <button
+                        class="bg-green-400 hover:bg-black rounded-md border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500">Shop
+                        Now</button>
+                </div>
+            </div>
+            <div
+                class="card bg-[url(https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/categories/4.jpg)] overflow-hidden	relative bg-cover bg-no-repeat">
+
+                <div class="flex items-center text-white absolute top-[10px] left-[30px]">
+                    <h1 class="font-bold text-5xl">40</h1>
+                    <div class="mt-1">
+                        <div>%</div>
+                        <div class="text-lg">OFF</div>
+                    </div>
+                </div>
+                <div
+                    class="text-white text-center absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[-30px]	">
+                    <div class="font-bold text-2xl mb-3">Milk</div>
+                    <button
+                        class="bg-green-400 hover:bg-black rounded-lg border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500">Shop
+                        Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- grid -->
+    <section class="container">
+        <div class="text-center mt-[50px]">
+            <h1 class="text-2xl font-bold">Popular Products</h1>
+            <p class="text-gray-500 text-lg mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore
+                lacus vel facilisis.
+            </p>
+        </div>
+
+        <div class="flex space-x-8 mt-[30px]">
+            <div>
+                <div>
+                    <ul class="space-y-1 w-[250px] mb-[30px]">
+                        <li
+                            class="flex justify-between items-center bg-gray-200 p-4 rounded-lg hover:text-[#64b4ae] active:text-[#64b4ae] hover:cursor-pointer">
+                            <h1 class="text-xl font-bold">All</h1>
+                            <i class="fa-solid fa-arrow-right font-bold"></i>
+                        </li>
+
+                        <li
+                            class="flex justify-between items-center bg-gray-200 p-4 rounded-lg hover:text-[#64b4ae] active:text-[#64b4ae] hover:cursor-pointer">
+                            <h1 class="text-xl font-bold">Vegetable</h1>
+                            <i class="fa-solid fa-arrow-right font-bold"></i>
+                        </li>
+
+                        <li
+                            class="flex justify-between items-center bg-gray-200 p-4 rounded-lg hover:text-[#64b4ae] active:text-[#64b4ae] hover:cursor-pointer">
+                            <h1 class="text-xl font-bold">Fruits</h1>
+                            <i class="fa-solid fa-arrow-right font-bold"></i>
+                        </li>
+                        <li
+                            class="flex justify-between items-center bg-gray-200 p-4 rounded-lg hover:text-[#64b4ae] active:text-[#64b4ae] hover:cursor-pointer">
+                            <h1 class="text-xl font-bold">Bakery</h1>
+                            <i class="fa-solid fa-arrow-right font-bold"></i>
+                        </li>
+                        <li
+                            class="flex justify-between items-center bg-gray-200 p-4 rounded-lg hover:text-[#64b4ae] active:text-[#64b4ae] hover:cursor-pointer">
+                            <h1 class="text-xl font-bold">All</h1>
+                            <i class="fa-solid fa-arrow-right font-bold"></i>
+                        </li>
+                    </ul>
+
+                    <div class="relative">
+                        <img class="w-[250px] h-[470px] rounded-lg"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product/product-banner.jpg"
+                            alt="">
+                        <div class="absolute top-10 left-8">
+                            <h1 class="font-bold text-2xl text-white">Juicy</h1>
+                            <h2 class="font-bold text-3xl text-[#f7e8aa] mt-3">FRUITS</h2>
+                            <p class="mt-1 text-white font-bold">100% Natural</p>
+
+                            <button
+                                class="bg-green-400 hover:bg-black rounded-lg border border-gray-500 px-6 py-2 text-white mt-3 font-bold transition-all duration-500">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 grid-rows-2 gap-x-8 gap-y-4">
+                <div class="w-[230px] h-[400px]  border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product/2.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/11.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/3.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/1.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/9.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/2.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/17.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[230px] h-[400px] border p-3 rounded-lg  overflow-hidden">
+                    <div class="relative group">
+
+                        <div
+                            class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                            <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                            <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                        </div>
+                        <img class="rounded-lg border"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/product/10.jpg"
+                            alt="">
+
+                        <div
+                            class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+                        <h1 class="text-gray-500">Juice</h1>
+                        <span class=" mt-5 text-[#f5885f]">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span class="text-gray-500">(4.8)</span>
+
+                        </span>
+                        <p
+                            class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-2 hover:cursor-pointer">
+                            Sweet snakes crunchy <br>
+                            nut mix 250gm
+                            pack</p>
+                        <div class="mt-2">
+                            <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                            <span class="text-gray-500 line-through">$100.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <div class="mt-20 grid grid-cols-3 grid-rows-1 gap-[35px]">
+
+            <div class="relative">
+                <img class="w-[400px] h-[230px]"
+                    src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product-banner/1.jpg"
+                    alt="">
+
+                <div class="absolute top-[35px] left-[25px]">
+                    <h1 class="text-2xl font-semibold">Healthy</h1>
+                    <span class="text-2xl font-bold">Bakery Products</span>
+                    <div class="mt-3 mb-2 items-center">
+                        <span class=" text-4xl font-bold text-[#64b496]">30% </span>
+                        <span class="text-gray-500 text-lg">Off</span>
+                    </div>
+                    <button
+                        class=" mb-5 bg-green-400 hover:bg-black rounded-md border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500">Shop
+                        Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img class="w-[400px] h-[230px]"
+                    src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product-banner/1.jpg"
+                    alt="">
+
+                <div class="absolute top-[35px] left-[25px]">
+                    <h1 class="text-2xl font-semibold">Healthy</h1>
+                    <span class="text-2xl font-bold">Bakery Products</span>
+                    <div class="mt-3 mb-2 items-center">
+                        <span class=" text-4xl font-bold text-[#64b496]">30% </span>
+                        <span class="text-gray-500 text-lg">Off</span>
+                    </div>
+                    <button
+                        class=" mb-5 bg-green-400 hover:bg-black rounded-md border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500">Shop
+                        Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative">
+
+                <img class="w-[400px] h-[230px]"
+                    src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product-banner/1.jpg"
+                    alt="">
+
+                <div class="absolute top-[35px] left-[25px]">
+                    <h1 class="text-2xl font-semibold">Healthy</h1>
+                    <span class="text-2xl font-bold">Bakery Products</span>
+                    <div class="mt-3 mb-2 items-center">
+                        <span class=" text-4xl font-bold text-[#64b496]">30% </span>
+                        <span class="text-gray-500 text-lg">Off</span>
+                    </div>
+                    <button
+                        class=" mb-5 bg-green-400 hover:bg-black rounded-md border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500">Shop
+                        Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div class="grid grid-cols-3 grid-rows-1 gap-7">
+            <div
+                class="bg-[#f7f7f8] border border-[#e9ecef] w-[400px] h-[200px] flex flex-col	justify-center items-center  px-[8.5px] mt-[90px]">
+                <div class="text-4xl text-[#64b4ae] mb-3">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold mb-2">Product Packing</h1>
+                    <p class="text-gray-500 text-lg">
+                        Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing.
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="bg-[#f7f7f8] border border-[#e9ecef] w-[400px] h-[200px] flex flex-col	justify-center items-center  px-[8.5px] mt-[90px]">
+                <div class="text-4xl text-[#64b4ae] mb-3">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold mb-2">24X7 Support</h1>
+                    <p class="text-gray-500 text-lg">
+                        Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing.
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="bg-[#f7f7f8] border border-[#e9ecef] w-[400px] h-[200px] flex flex-col	justify-center items-center  px-[8.5px] mt-[90px]">
+                <div class="text-4xl text-[#64b4ae] mb-3">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold mb-2">Delivery in 5 Days</h1>
+                    <p class="text-gray-500 text-lg">
+                        Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="mt-[110px] relative">
+            <div
+                class="bg-[url(https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/deal/bg-deal.jpg)] w-[100%] h-[600px] bg-no-repeat bg-cover bg-center">
+
+            </div>
+
+            <div
+                class="absolute top-[100px] left-[120px] border bg-[#f3ddcd] text-left p-[40px] w-[600px] h-[350px] rounded-lg">
+                <div class="">
+                    <span class="text-3xl text-[#64b496] font-bold">35% </span>
+
+                    <span class="text-2xl font-semibold">OFF</span>
+
+                    <h1 class="text-3xl font-bold  mt-7">Great deal on organic food.</h1>
+                    <p class="text-gray-500 text-xl mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        delectus exercitationem veniam
+                        iusto.</p>
+                </div>
+
+                <div class="border  flex  w-[300px] px-6 py-3 rounded-lg mt-5">
+                    <div class="flex items-center gap-4">
+
+                        <div class="flex flex-col">
+                            <span class="font-bold text-2xl">360</span>
+                            <span class="text-md text-gray-500">Days</span>
+                        </div>
+                        <div class="font-boldflex flex-col gap-2">:</div>
+
+                        <div class="flex flex-col">
+                            <span class="font-bold text-2xl">05</span>
+                            <span class="text-md text-gray-500">Hrs</span>
+                        </div>
+                        <div class="font-boldflex flex-col gap-2">:</div>
+
+                        <div class="flex flex-col">
+                            <span class="font-bold text-2xl">51</span>
+                            <span class="text-md text-gray-500">Min</span>
+                        </div>
+                        <div class="font-boldflex flex-col gap-2">:</div>
+
+
+                        <div class="flex flex-col">
+                            <span class="font-bold text-2xl">17</span>
+                            <span class="text-md text-gray-500">Sec</span>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="mt-[60px] flex content-around gap-8 ">
+            <div class="w-[350px] border p-5 rounded-lg  overflow-hidden">
+                <div class="relative group">
+
+                    <div
+                        class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                        <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                        <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                    </div>
+                    <img class="rounded-lg border"
+                        src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product/9.jpg"
+                        alt="">
+
+                    <div
+                        class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+
+                    <h1 class="text-gray-500">Snacks</h1>
+                    <span class=" mt-5 text-[#f5885f]">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fa-regular fa-star "></i>
+                        <span class="text-gray-500">(4.5)</span>
+
+                    </span>
+                    <p
+                        class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-4 hover:cursor-pointer">
+                        Sweet snakes crunchy
+                        nut<br>mix 250gm
+                        pack</p>
+                    <div class="mt-4">
+                        <span class="text-xl font-bold text-[#64b496] ">$100.00</span>
+                        <span class="text-gray-500 line-through">$110.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[350px] border p-5 rounded-lg  overflow-hidden">
+                <div class="relative group">
+
+                    <div
+                        class="flex flex-col absolute top-[10px] right-[-100px] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:right-4">
+                        <i class="bg-white rounded-full p-2 mb-2 fa-regular fa-heart"></i>
+
+                        <i class="bg-white rounded-full p-2 fa-regular fa-eye"></i>
+                    </div>
+                    <img class="rounded-lg border"
+                        src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product/2.jpg"
+                        alt="">
+
+                    <div
+                        class="inline-block p-2 bg-[#f7f7f8] text-[#64b496] hover:cursor-pointer rounded-full border absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+
+                    <h1 class="text-gray-500">Juice</h1>
+                    <span class=" mt-5 text-[#f5885f]">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fa-regular fa-star "></i>
+                        <span class="text-gray-500">(4.8)</span>
+
+                    </span>
+                    <p
+                        class="text-xl font-semibold hover:text-[#64b496] transition-all duration-500 mt-4 hover:cursor-pointer">
+                        Sweet snakes crunchy
+                        nut<br>mix 250gm
+                        pack</p>
+                    <div class="mt-4">
+                        <span class="text-xl font-bold text-[#64b496] ">$80.00</span>
+                        <span class="text-gray-500 line-through">$100.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative border-box">
+                <div class=" w-[100vh] bg-no-repeat bg-contain">
+                    <img src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/product/products-rightview.jpg"
+                        height="500px" alt="">
+                </div>
+
+                <div class="absolute text-right top-[80px] ml-[500px]">
+                    <div class="text-3xl font-bold ">
+                        <h1>Organic & <br>Healthy</h1>
+                        <h1>Vegetables</h1>
+                    </div>
+                    <div class="space-x-2 mt-4">
+                        <span class="text-2xl font-bold">25%</span>
+                        <span font-semibold>OFF</span>
+                    </div>
+                    <button
+                        class="mt-5 mb-5 bg-green-400 hover:bg-black rounded-md border border-gray-500 px-6 py-2 text-white font-bold transition-all duration-500 ">Shop
+                        Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-[70px]">
+
+        <div class="text-center">
+            <h1 class="font-bold text-3xl">Great Words From People</h1>
+            <p class="text-gray-500 text-lg mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor <br> incididunt ut labore lacus vel facilisis.</p>
+        </div>
+        <div class="grid grid-rows-1 grid-cols-3 space-x-3 mt-[50px]">
+            <div class="relative">
+                <div class="border text-center mt-4 w-[400px] h-[350px] bg-[#f7f7f8] p-4">
+                    <h3 class="text-gray-500 text-lg mt-[60px]">Co Founder</h3>
+                    <h1 class="text-3xl font-bold mt-3">Stephen Smith</h1>
+                    <p class="text-gray-500 text-lg mt-3 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit <br>
+                        vero earum seed ? Vero.consectetur adipisicing elit.</p>
+
+
+                    <span class="text-[#f5885f]">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </span>
+                </div>
+
+
+                <div class="">
+                    <img class="w-[120px] h-[120px] rounded-full absolute top-[-50px] ml-[150px]  border border-[15px]	border-[#fff]"
+                        src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/testimonial/1.jpg"
+                        bg-[url()] alt="">
+
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="border text-center mt-4 w-[400px] h-[350px] bg-[#f7f7f8] p-4">
+                    <h3 class="text-gray-500 text-lg mt-[60px]">Co Founder</h3>
+                    <h1 class="text-3xl font-bold mt-3">Stephen Smith</h1>
+                    <p class="text-gray-500 text-lg mt-3 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit
+                        <br>
+                        vero earum seed ? Vero.consectetur adipisicing elit.
+                    </p>
+
+
+                    <span class="text-[#f5885f]">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </span>
+                </div>
+
+
+                <div class="">
+                    <img class="w-[120px] h-[120px] rounded-full absolute top-[-50px] ml-[150px]  border border-[15px]	border-[#fff]"
+                        src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/testimonial/1.jpg"
+                        bg-[url()] alt="">
+
+                </div>
+
+            </div>
+
+            <div class="relative">
+
+                <div class="border text-center mt-4 w-[400px] h-[350px] bg-[#f7f7f8] p-4">
+                    <h3 class="text-gray-500 text-lg mt-[60px]">Co Founder</h3>
+                    <h1 class="text-3xl font-bold mt-3">Stephen Smith</h1>
+                    <p class="text-gray-500 text-lg mt-3 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit
+                        <br>
+                        vero earum seed ? Vero.consectetur adipisicing elit.
+                    </p>
+
+
+                    <span class="text-[#f5885f]">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </span>
+                </div>
+
+                <div class="">
+                    <img class="w-[120px] h-[120px] rounded-full absolute top-[-50px] ml-[150px]  border border-[15px]	border-[#fff]"
+                        src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/testimonial/1.jpg"
+                        bg-[url()] alt="">
+
+                </div>
+
+
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="mt-[50px]">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold mb-3">Latest News</h1>
+                <p class="text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+                    eiusmod tempor incididunt ut labore lacus vel facilisis.
+                </p>
+            </div>
+
+            <div class="grid grid-rows-1 grid-cols-3 gap-2 mt-3">
+                <div class="w-[400px] border mt-4 rounded-lg relative group ">
+
+                    <div class="m-6">
+                        <div class="text-lg text-gray-500 mb-3">
+                            <span class="border-r-2 border-gray-400 pr-2">By Admin</span>
+                            <span
+                                class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer px-2">Snacks</span>
+                        </div>
+                        <p class="text-2xl font-bold text-gray-700 mb-3 ">
+                            Urna pretium elit mauris cursus at <br>elit Vestibulum.
+                        </p>
+                        <div class="flex flex-row font-bold items-center text-[#64b4ae] text-lg gap-2">
+                            <div>Read More</div>
+                            <i class="fa-solid fa-arrow-right font-bold mt-1"></i>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="group-hover:scale-[1.2] group-hover:rotate-[8deg] transition-all duration-500"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/blog/3.jpg"
+                            alt="">
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-[#46494b] text-white absolute bottom-6 right-6 text-center px-5 py-4 rounded-lg">
+                        <span class="text-2xl font-bold">12</span>
+                        <span class="font-semibold">Oct</span>
+                    </div>
+
+                </div>
+
+                <div class="w-[400px] border mt-4 rounded-lg relative group ">
+
+                    <div class="m-6">
+                        <div class="text-lg text-gray-500 mb-3">
+                            <span class="border-r-2 border-gray-400 pr-2">By Admin</span>
+                            <span
+                                class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer px-2">Snacks</span>
+                        </div>
+                        <p class="text-2xl font-bold text-gray-700 mb-3 ">
+                            Urna pretium elit mauris cursus at <br>elit Vestibulum.
+                        </p>
+                        <div class="flex flex-row font-bold items-center text-[#64b4ae] text-lg gap-2">
+                            <div>Read More</div>
+                            <i class="fa-solid fa-arrow-right font-bold mt-1"></i>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="group-hover:scale-[1.2] group-hover:rotate-[8deg] transition-all duration-500"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/blog/3.jpg"
+                            alt="">
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-[#46494b] text-white absolute bottom-6 right-6 text-center px-5 py-4 rounded-lg">
+                        <span class="text-2xl font-bold">12</span>
+                        <span class="font-semibold">Oct</span>
+                    </div>
+
+                </div>
+
+                <div class="w-[400px] border mt-4 rounded-lg relative group ">
+
+                    <div class="m-6">
+                        <div class="text-lg text-gray-500 mb-3">
+                            <span class="border-r-2 border-gray-400 pr-2">By Admin</span>
+                            <span
+                                class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer px-2">Snacks</span>
+                        </div>
+                        <p class="text-2xl font-bold text-gray-700 mb-3 ">
+                            Urna pretium elit mauris cursus at <br>elit Vestibulum.
+                        </p>
+                        <div class="flex flex-row font-bold items-center text-[#64b4ae] text-lg gap-2">
+                            <div>Read More</div>
+                            <i class="fa-solid fa-arrow-right font-bold mt-1"></i>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="group-hover:scale-[1.2] group-hover:rotate-[8deg] transition-all duration-500"
+                            src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/blog/3.jpg"
+                            alt="">
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-[#46494b] text-white absolute bottom-6 right-6 text-center px-5 py-4 rounded-lg">
+                        <span class="text-2xl font-bold">12</span>
+                        <span class="font-semibold">Oct</span>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="h-[70vh] mt-[40px] border bg-gray-100 ">
+            <div class="container py-[100px] flex flex-row space-x-7 space-y-5">
+
+                <div class="space-y-4">
+                    <img src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/logo/logo.png"
+                        alt="">
+
+                    <div class="text-xl  text-gray-500 space-y-6">
+                        <p class="">
+                            Carrot is the biggest market of grocery <br> products. Get your daily needs from our
+                            store.
+                        </p>
+                        <div class="flex flex-row ">
+                            <i class="fa-solid fa-location-dot text-2xl pr-4"></i>
+                            <ul>
+                                51 Green St.Huntington ohaio beach <br> ontario, NY 11746 KY 4783, USA.
+                            </ul>
+                        </div>
+                        <div class="flex flex-row ">
+                            <i class="fa-regular fa-envelope text-2xl pr-4"></i>
+                            <ul class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">
+                                example@email.com</ul>
+                        </div>
+                        <div class="flex flex-row ">
+                            <i class="fas fa-phone text-[#64b4ae] text-2xl pr-4"></i>
+                            <ul class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">+91
+                                123 4567890
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-xl text-gray-500 space-y-3">
+                    <h1 class="text-2xl font-bold text-black">Company</h1>
+
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">About us</div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Delivery
+                        Information
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Privacy Policy
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Terms & Condition
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">contact Us</div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Support Center
+                    </div>
+
+                </div>
+
+                <div class="text-xl text-gray-500 space-y-3">
+                    <h1 class="text-2xl font-bold text-black">Category</h1>
+
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Diary & Bakery
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Fruits &
+                        Vegetables
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Snacks & Spice
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Juice & Drinks
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Chicken & Meat
+                    </div>
+                    <div class="hover:text-[#64b4ae] transition-all duration-500 hover:cursor-pointer">Fast Food </div>
+
+                </div>
+
+                <div class="text-xl text-gray-500 space-y-5">
+                    <h1 class="text-2xl font-bold">Sibscribe Our Newsletters</h1>
+                    <div
+                        class="border bg-white p-2 flex justify-between items-center text-lg  w-[100%] rounded-lg px-3">
+                        <input class="outline-none" type="text" placeholder="Search here....">
+                        <i class="hover:cursor-pointer fa-brands fa-telegram text-2xl"></i>
+                    </div>
+
+                    <span class="flex flex-row space-x-4 text-xl">
+                        <div
+                            class="flex w-[35px] h-[35px] bg-[#fff] rounded-lg broder border-[#f3ddcd] items-center justify-center content-center hover:text-[#64b496] transition-all duration-500 ease-in-out	hover:cursor-pointer">
+                            <i class="fa-brands fa-facebook "></i>
+                        </div>
+
+                        <div
+                            class="flex w-[35px] h-[35px] bg-[#fff] rounded-lg broder border-[#f3ddcd] items-center justify-center content-center hover:text-[#64b496] transition-all duration-500 ease-in-out	hover:cursor-pointer">
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                        </div>
+
+                        <div
+                            class="flex w-[35px] h-[35px] bg-[#fff] rounded-lg broder border-[#f3ddcd] items-center justify-center content-center hover:text-[#64b496] transition-all duration-500 ease-in-out hover:cursor-pointer	">
+                            <i class="fa-brands fa-dribbble"></i>
+
+                        </div>
+
+                        <div
+                            class="flex w-[35px] h-[35px] bg-[#fff] rounded-lg broder border-[#f3ddcd] items-center justify-center content-center hover:text-[#64b496] transition-all duration-500 ease-in-out	hover:cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </div>
+
+                    </span>
+
+                    <div class="w-[500px] h-[500px] flex flex-row space-x-4 ">
+                        <div class="hover:cursor-pointer">
+                            <img class="rounded-lg"
+                                src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/insta/1.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="hover:cursor-pointer">
+                            <img class="rounded-lg"
+                                src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/insta/2.jpg"
+                                alt="">
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="rounded-lg"
+                                src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/insta/3.jpg"
+                                alt="">
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="rounded-lg"
+                                src="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/img/insta/4.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</html>
